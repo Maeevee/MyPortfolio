@@ -1,0 +1,154 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+#container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.header-inner {
+	min-height: 122px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+/*Navigation*/
+
+.nav .nav-list {
+	display: flex;
+	column-gap: 80px;
+}
+
+.nav-item-link {
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+}
+
+/*Burger */
+
+.burger-icon {
+	display: none;
+}
+
+
+/*Carousel */
+
+.slick-slide img {
+	width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+	#container {
+		max-width: 919px;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	/*Logo*/
+	.header .header-logo {
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		top: 30px;
+	}
+
+	/*Burger*/
+
+	.burger-icon {
+		width: 48px;
+		height: 31px;
+		border: none;
+		background: none;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		top: 45px;
+		right: 0;
+	}
+
+	.burger-icon-inner,
+	.burger-icon:before,
+	.burger-icon:after {
+		content: '';
+		width: 48px;
+		height: 5px;
+		background: #000;
+	}
+
+	/*Menu open*/
+
+	.header.menu-open {
+		background: #000;
+		width: 100%;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    z-index: 2;
+	    min-height: 316px;
+	}
+
+	.menu-open .header-inner {
+		max-width: 919px;
+    	margin: 0 auto;
+    	min-height: 316px;
+    	justify-content: center;
+    	align-items: flex-end;
+    	padding-bottom: 111px;
+	}
+
+	.menu-open .logo-svg {
+		fill: #fff;
+	}
+
+	.menu-open .burger-icon:before,
+	.menu-open .burger-icon:after {
+		background: #fff;
+		position: relative;
+		left: 0;
+		transition: transform .5s ease;
+	}
+
+	.menu-open .burger-icon-inner {
+		display: none;
+	}
+
+	.menu-open .burger-icon:before {
+		transform: rotate(45deg);
+		top: 15px;
+	}
+
+	.menu-open .burger-icon:after {
+		transform: rotate(-45deg);
+		top: -10px;
+	}
+
+	.menu-open .nav {
+		display: block;
+	}
+
+	.menu-open .nav-item-link {
+		color: #fff;
+	}
+
+	/*Carousel*/
+
+	.menu-open + .carousel {
+		margin-top: 122px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+}
