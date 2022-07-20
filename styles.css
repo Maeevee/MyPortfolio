@@ -133,6 +133,10 @@ header div:first-child{
     background-image: url(bislite-free-html5-templates.jpg);
 }
 
+.adaptive{
+    background-image: url(adaptive.png);
+}
+
 .projects-list a{
     width: 500px;
     height: 340px;
