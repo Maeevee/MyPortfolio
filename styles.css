@@ -123,6 +123,7 @@ header div:first-child{
 
 .projects-list{
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .funiro{
