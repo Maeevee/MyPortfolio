@@ -1,5 +1,5 @@
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -174,7 +174,7 @@ footer{
     padding: 20px;
     align-content: space-between;
     align-items: center;
-}
+} */
 
 *{
     margin: 0;
@@ -309,6 +309,8 @@ header div:first-child{
 .bislite{
     background-image: url(bislite-free-html5-templates.jpg);
 }
+
+
 
 .projects-list a{
     width: 500px;
