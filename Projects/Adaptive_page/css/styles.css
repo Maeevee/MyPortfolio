@@ -97,6 +97,10 @@ ul {
 	color: #fff;
 }
 
+.blocks span{
+	font-size: 48px;
+}
+
 .container div:nth-child(4){
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
