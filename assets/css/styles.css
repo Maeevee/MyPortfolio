@@ -132,13 +132,29 @@ main, .experience, .education, .skills{
 
 /* Icon fonts */
 
+[class^="icon-"]{
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+}
+
+[class^="icon-github-square"]{
+    font-size: 47px;
+    position: relative;
+    bottom: 3px;
+}
+
+/* .icon-github-square:hover, .icon-facebook2:hover, .icon-linkedin:hover{
+    font-size: 50px;
+} */
+
 .icon-download:hover{
     color: rgb(195, 6, 6);
 }
 
-[class^="icon-"]{
-    font-size: 28px;
+[class^="icon-download"]{
+    
     color: rgb(0, 0, 0);
+    font-size: 26px;
 }
 
 /* Projects section */
@@ -194,4 +210,16 @@ footer{
     padding: 20px;
     align-content: space-between;
     align-items: center;
+}
+
+footer div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+footer p{
+    width: 180px;
+    text-align: center;
 }
