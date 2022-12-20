@@ -31,15 +31,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-header div:first-child{
-    display: flex;
-    width: 370px;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
 }
 
 header div p{
@@ -72,6 +63,7 @@ p, li{
 
 h1{
     font-size: 22px;
+    display: inline;
 }
 
 h2{
@@ -152,10 +144,6 @@ main, .experience, .education, .skills{
     position: relative;
     bottom: 3px;
 }
-
-/* .icon-github-square:hover, .icon-facebook2:hover, .icon-linkedin:hover{
-    font-size: 50px;
-} */
 
 .icon-download:hover{
     color: rgb(195, 6, 6);
@@ -250,15 +238,16 @@ footer p{
     /* Header */
 
     header{
-        margin-bottom: 20px;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
     }
-    header div h1{
-        margin-left: 50px;
+    h1{
+        display: block;
     }
 
-    header div p{
-        margin: 0 0 20px 65px;
-
+    header div{
+        margin-bottom: 15px;
     }
 
     /* Navigatiom */
@@ -270,13 +259,13 @@ footer p{
     /* Maim */
 
     .photo{
-        margin-bottom: 20px;
-        width: 300px;
-        height: 300px;
+        margin-bottom: 30px;
+        width: 350px;
+        height: 350px;
     }
 
     .heading{
-        flex-wrap: wrap;
+        flex-direction: column;
         padding-bottom: 10px;
     }
 
@@ -325,7 +314,8 @@ footer p{
 
     footer{
         height: fit-content;
-        padding-left: 30px;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     footer div{
