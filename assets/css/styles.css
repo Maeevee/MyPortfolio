@@ -185,16 +185,11 @@ main, .experience, .education, .skills{
     background-size: cover;
     margin-top: 30px;
     position: relative;
+    transition: all 1s ease;
 }
 
-.projects-list a:hover::before{
-    content: "";
-    width: 500px;
-    height: 340px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(60, 60, 60, 0.655);
+.projects-list a:hover{
+    transform: scale(1.1);
 }
 
 a span{
@@ -317,7 +312,7 @@ footer p{
         text-align: center;
     }
 
-    .projects-list a, .projects-list a:hover::before{
+    .projects-list a{
         width: 300px;
         height: 204px;
     }
@@ -327,6 +322,7 @@ footer p{
         height: 30px;
         line-height: 30px;
         font-size: 15px;
+    }
 
     /* Footer */
 
